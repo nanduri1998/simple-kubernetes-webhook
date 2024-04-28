@@ -28,7 +28,7 @@ delete-cluster:
 .PHONY: push
 push: docker-build
 	@echo "\n📦 Pushing admission-webhook image into Kind's Docker daemon..."
-	kind load docker-image simple-kubernetes-webhook:latest
+	docker push us-central1-docker.pkg.dev/elite-list-421616/kubernetes-webhook/simple-kubernetes-webhook:latest
 
 .PHONY: deploy-config
 deploy-config:
