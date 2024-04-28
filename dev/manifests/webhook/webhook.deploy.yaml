@@ -21,7 +21,7 @@ spec:
           effect: NoSchedule
       containers:
         - image: us-central1-docker.pkg.dev/elite-list-421616/kubernetes-webhook/simple-kubernetes-webhook:latest
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           name: simple-kubernetes-webhook
           env:
             - name: TLS
